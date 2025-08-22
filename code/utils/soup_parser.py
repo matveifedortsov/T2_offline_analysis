@@ -4,7 +4,7 @@
 
 from bs4 import BeautifulSoup
 import re
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional 
 from .logger import get_logger
 
 logger = get_logger(__name__)
