@@ -3,6 +3,7 @@
 """
 
 from datetime import datetime, timedelta
+from typing import List  # Добавьте этот импорт
 
 def format_date(date_obj: datetime, format_str: str = "%Y-%m-%d %H:%M:%S") -> str:
     """
