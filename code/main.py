@@ -5,7 +5,6 @@
 
 import argparse
 import logging
-from data_collection.link_parser import LinksCollector
 from data_collection.comprehensive_parser import ComprehensiveParser
 from data_processing.data_combiner import DataCombiner
 from analysis.coverage_analysis import CoverageAnalyzer
@@ -34,10 +33,6 @@ def main():
     if args.full:
         logger.info("Запуск полного цикла анализа")
         
-        # 1. Сбор ссылок
-        logger.info("Этап 1: Сбор ссылок на организации")
-        collector = LinksCollector(config)
-        collector.collect_links(args.city, args.type)
         
         # 2. Парсинг детальной информации
         logger.info("Этап 2: Парсинг детальной информации")
